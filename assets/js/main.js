@@ -51,3 +51,5 @@ console.log(veicoloOne.calcolaEta());
 const veicoloTwo = new Automobile("Opel", 2020, "nera", 4, "benzina");
 console.log(veicoloTwo.informazioniAuto());
 
+
+
