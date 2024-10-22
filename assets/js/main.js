@@ -1,15 +1,14 @@
 /*
 
-In questo esercizio, dovrai creare una classe in JavaScript chiamata "Veicolo" con alcune proprietà e metodi.
-La classe "Veicolo" dovrebbe avere le seguenti caratteristiche:
-marca
-anno
-colore
-porte
-carburante
+Successivamente:
+Creiamo una nuova istanza di veicolo che rappresenti una Fiat 2019 blu.
+Otteniamo le informazioni della vettura utilizzando il metodo informazioni()
+Calcoliamo l'età della vettura utilizzando il metodo calcolaEta()
+
 
 */
 
+// creo una classe che rappresenta un veicolo
 class Veicolo {
     marca;
     anno;
@@ -24,4 +23,15 @@ class Veicolo {
         this.porte = porte;
         this.carburante = carburante;
     };
-}
+
+    // metodo per ottenere le info della vettura
+    informazioni() {
+        return `E' una ${this.marca} del ${this.anno}, di colore ${this.colore}, con ${this.porte} porte che va a ${this.carburante}.`;
+    };
+};
+
+// creo un'instanza 
+const veicoloOne = new Veicolo("Fiat", 2019, "blu", 4, "benzina");
+
+console.log(veicoloOne.informazioni());
+
